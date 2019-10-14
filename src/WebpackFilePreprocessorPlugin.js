@@ -20,11 +20,11 @@ class WebpackFilePreprocessorPlugin {
 
     compiler.hooks.emit.tapAsync('WebpackFilePreprocessorPlugin', (compilation, callback) => {
       if (options.debug === true) {
-        console.info('Preprocessing Assets:\n');
+        console.info('\nPreprocessing Assets:\n');
       }
 
       // Loop through the compilation assets
-      Object.keys(compilation.assets).map((filename) => {
+      Object.keys(compilation.assets).forEach((filename) => {
         if (!options.pattern.test(filename)) {
           return;
         }
