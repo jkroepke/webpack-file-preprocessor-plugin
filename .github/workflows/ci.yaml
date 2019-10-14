@@ -6,12 +6,12 @@ on:
     branches:
       - master
 
-strategy:
-  matrix:
-    node: [8, 10, 12]
-
 jobs:
   build:
+    strategy:
+      matrix:
+        node: [8, 10, 12]
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-node@v1
