@@ -4,15 +4,15 @@
   "description": "An updated version of a lightweight yet generic webpack plugin for pre-processing assets before emitting.",
   "main": "index.js",
   "engines": {
-    "node": ">=8"
+    "node": ">=10.13"
   },
   "dependencies": {
-    "webpack-sources": "^1.4.3"
+    "webpack-sources": "^2.2.0"
   },
   "devDependencies": {
-    "eslint": "^6.5.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint": "^7.13.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   },
   "scripts": {
     "lint": "eslint .",
